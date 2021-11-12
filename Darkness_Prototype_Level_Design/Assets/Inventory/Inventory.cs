@@ -6,12 +6,16 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] Item[] yourInventory;
+    [SerializeField] Item[] draggedItem;
     public int slotsNumber;
 
     private PickingUp pickingUp;
 
     public GameObject x;
     public int n;
+
+    public int a;
+    public int b; 
 
     public Image[] slot;
     public Sprite[] slotSprite;
@@ -20,8 +24,9 @@ public class Inventory : MonoBehaviour
     void Start()
     {
        
-
+         
         yourInventory = new Item[7];
+        
         for (int i = 0; i < yourInventory.Length; i++)
         {
             yourInventory[i] = new Item();
@@ -89,6 +94,44 @@ public class Inventory : MonoBehaviour
         else
         {
             yourInventory[indexOfEmpty] = item;
+        }
+
+        
+    }
+     public void DraggingItem(Image slotX)
+    {
+        print("Dragging:" + slotX.name);
+        for(int i= 0; i<slotsNumber; i++)
+        {
+            if(slot[i] == slotX)
+            {
+                a = i; 
+            }
+        }
+    }
+
+    public void Drop(Image slotX)
+    {
+        print("Stop Dragging:" + slotX.name);
+        if (a != b)
+        {
+            draggedItem[0] = yourInventory[0];
+            yourInventory[a] = yourInventory[0];
+            yourInventory[b] = draggedItem[0];
+            a = 0;
+            b = 0;
+        }
+    }
+
+    public void Enter(Image slotX)
+    {
+        print("enter");
+        for (int i = 0; i < slotsNumber; i++)
+        {
+            if(slot[i] == slotX)
+            {
+                a = i; 
+            }
         }
     }
 }
