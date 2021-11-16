@@ -220,6 +220,19 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &562143064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562143056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e31844f1d8f8d84680fd14a2c7409c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  internalObject: 
 --- !u!114 &581488862 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3091877362023076080, guid: 59b573ccf29ded94b91f90e0ba0186e0, type: 3}
@@ -545,15 +558,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50.5
+      value: 59.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 11.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.2
+      value: 55.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -613,6 +626,7 @@ GameObject:
   - component: {fileID: 1614213837}
   - component: {fileID: 1614213836}
   - component: {fileID: 1614213835}
+  - component: {fileID: 1614213840}
   m_Layer: 0
   m_Name: knife
   m_TagString: item
@@ -717,6 +731,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1614213840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614213834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9dba7735c2a2524e905e1276fc0ad7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
+  redCol: 0
+  greenCol: 0
+  blueCol: 0
+  lookingAtObject: 0
+  flashingIn: 1
+  startedFlashing: 0
 --- !u!1 &1698952821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3091877361171997659, guid: 59b573ccf29ded94b91f90e0ba0186e0, type: 3}
