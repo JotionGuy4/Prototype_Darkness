@@ -57,8 +57,8 @@ public class SelectedFlash : MonoBehaviour
                 }
                 else
                 {
-                    redCol -= 50;
-                    greenCol -= 50;
+                    blueCol -= 25;
+                    greenCol -= 1;
                 }
             }
             if (flashingIn == false)
@@ -69,8 +69,8 @@ public class SelectedFlash : MonoBehaviour
                 }
                 else
                 {
-                    redCol += 50;
-                    greenCol += 50;
+                    blueCol += 25;
+                    greenCol += 1;
                 }
             }
         }
